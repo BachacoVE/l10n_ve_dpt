@@ -40,11 +40,13 @@ manera que queden disponibles en todos los campos de dirección en modelos deriv
     "init_xml": [],
     "demo_xml": [],
     "data": [
+
         'data/res.country.state.xml',
         'data/res.country.state.municipality.xml',
         'data/res.country.state.municipality.parish.xml',
         'views/l10n_ve_dpt_view.xml',
         'views/res_partner.xml',
+        'security/ir.model.access.csv'
     ],
     "installable": True
 }
