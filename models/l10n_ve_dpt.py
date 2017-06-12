@@ -28,6 +28,7 @@ class CountryState(models.Model):
     _description="Country states"
 
     municipality_id = fields.One2many('res.country.state.municipality', 'state_id', 'Municipalities in this state')
+    ubigeo = fields.Char(string='ubigeo code', size=2)
 
 
 class StateMunicipality(models.Model):
@@ -39,7 +40,7 @@ class StateMunicipality(models.Model):
     name = fields.Char('Municipality', required=True, help='Municipality name')
     code = fields.Char('Code', size=3, required=True, help='Municipality code in max. three chars.')
     parish_id = fields.One2many('res.country.state.municipality.parish', 'municipality_id', 'Parishes in this municipality')
-
+    ubigeo = fields.Char(string='ubigeo code', size=4)
 
 class MunicipalityParish(models.Model):
     """States Parishes"""
@@ -49,3 +50,4 @@ class MunicipalityParish(models.Model):
     municipality_id = fields.Many2one('res.country.state.municipality', 'Municipality', help='Name of the Municipality to which the parish belongs')
     name = fields.Char('Parish', required=True, help='Parish name')
     code = fields.Char('Name',size=3, required=True, help='Parish Code in max. three chars.')
+    ubigeo = fields.Char(string='ubigeo code', size=6)
