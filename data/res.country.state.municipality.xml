@@ -2026,7 +2026,7 @@
 
 	<record id="mun_ve_DEP_2501" model="res.country.state.municipality">
 		<field name="name">Dependencias Federales</field>
-		<field name="state_id" ref="" />
+		<field name="state_id" ref="est_ve_DPF" />
 		<field name="ubigeo">2501</field>
 	</record>
 	

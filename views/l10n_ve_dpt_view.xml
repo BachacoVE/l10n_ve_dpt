@@ -5,8 +5,8 @@
             <field name="model">res.country.state</field>
             <field name="arch" type="xml">
             <search>
+                <field name="ubigeo"/>
                 <field name="name"/>
-                <field name="code"/>
                 <filter name="Venezuela" domain="[('country_id.name','=','Venezuela')]"/>
             </search>
             </field>
@@ -50,7 +50,6 @@
                 <form string="Municipality">
                 <group col="4" colspan="2">
                     <field name="ubigeo"/>
-                    <field name="code" select="1"/>
                     <field name="name" select="2"/>
                     <field name="parish_id" select="3"/>
                 </group>
@@ -65,7 +64,6 @@
             <field name="arch" type="xml">
                 <tree string="Municipality">
                     <field name="ubigeo"/>
-                    <field name="code"/>
                     <field name="name"/>
                     <field name="state_id"/>
                 </tree>
@@ -88,7 +86,6 @@
                 <form string="Parish">
                 <group col="4" colspan="2">
                     <field name="ubigeo"/>
-                    <field name="code" select="1"/>
                     <field name="name" select="2"/>
                     <field name="municipality_id" select="0"/>
                 </group>
@@ -103,7 +100,6 @@
             <field name="arch" type="xml">
                 <tree string="Parish">
                     <field name="ubigeo"/>
-                    <field name="code"/>
                     <field name="name"/>
                     <field name="municipality_id"/>
                 </tree>
