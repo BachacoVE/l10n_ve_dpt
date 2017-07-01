@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
+<odoo>
 	<data noupdate="0">
 	  
 	<!-- Estados -->
@@ -175,7 +175,8 @@
 		<field name="country_id">240</field>
 		<field name="code">DPF</field>
 		<field name="name">Dependencias Federales</field>
+		<field name="ubigeo">25</field>
 	</record>
 
 	</data>
-</openerp>
+</odoo>
